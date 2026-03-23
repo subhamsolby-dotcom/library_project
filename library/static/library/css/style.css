@@ -1,0 +1,175 @@
+/* Reset */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+/* Animated Gradient Background */
+
+body{
+
+background:linear-gradient(45deg,#1e3c72,#2a5298,#6dd5ed,#2193b0);
+background-size:400% 400%;
+animation:gradientMove 12s ease infinite;
+
+min-height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+color:white;
+}
+
+@keyframes gradientMove{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
+}
+
+/* Main Content */
+
+.content{
+text-align:center;
+}
+
+/* Title */
+
+h1{
+font-size:60px;
+margin-bottom:40px;
+}
+
+h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+/* Glass Card Container */
+
+.container{
+
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(10px);
+
+padding:40px;
+border-radius:15px;
+
+width:420px;
+
+box-shadow:0 8px 25px rgba(0,0,0,0.3);
+
+}
+
+/* Menu Buttons */
+
+.menu{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.menu a{
+
+display:block;
+
+padding:15px;
+
+text-decoration:none;
+color:white;
+font-size:20px;
+
+border-radius:12px;
+
+background:rgba(255,255,255,0.15);
+border:1px solid rgba(255,255,255,0.3);
+
+transition:0.3s;
+
+}
+
+/* Hover Animation */
+
+.menu a:hover{
+
+background:#00c6ff;
+
+transform:scale(1.08);
+
+box-shadow:0 0 15px rgba(0,198,255,0.7);
+
+}
+
+/* Form Fields */
+
+input, select{
+
+width:100%;
+padding:10px;
+
+margin:10px 0;
+
+border:none;
+border-radius:8px;
+
+}
+
+/* Buttons */
+
+button{
+
+width:100%;
+padding:12px;
+
+background:#00c6ff;
+border:none;
+
+color:white;
+font-size:16px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+button:hover{
+
+background:#0072ff;
+
+transform:scale(1.05);
+
+}
+
+/* Table Styling */
+
+table{
+
+width:100%;
+margin-top:20px;
+
+border-collapse:collapse;
+
+background:rgba(255,255,255,0.1);
+
+}
+
+th, td{
+
+padding:10px;
+text-align:center;
+
+border-bottom:1px solid rgba(255,255,255,0.2);
+
+}
+
+th{
+background:rgba(0,0,0,0.3);
+}
